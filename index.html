@@ -7,6 +7,39 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="container">
+        <div class="header">
+            <div id="monthDisplay" class="monthDisplay">
+
+            </div>
+            <div>
+                <button id="backButton" class="backButton">Back</button>
+                <button id="nextButton" class="nextButton">Next</button>
+            </div>
+
+        </div>
+        <div class="weekdays">
+            <div>Sunday</div>
+            <div>Monday</div>
+            <div>Tuesday</div>
+            <div>Wednesday</div>
+            <div>Thursday</div>
+            <div>Friday</div>
+            <div>Saturday</div>
+        </div>
+        <div class="calendar" id="calendar">
+                
+        </div>
+    </div>
+    <!-- modals which will pop in absolute position after user clicks a day in calendar -->
+    <div id="newEventModal">
+        <h2>New Ewent</h2>
+        <input id="eventTitleInput" placeholder="Event Title" />
+        <button id="saveButton">Save</button>
+        <button id="cancelButton">Cancel</button>
+    </div>
+    <div class="modalBackDrop" id="modalBackDrop"></div>
+
     <script src="./main.js"></script>
 </body>
 </html>
